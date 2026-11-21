@@ -41,7 +41,8 @@ jobs:
         run: gradle --no-daemon assembleDebug
 
       - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: CliporaAI-APK
+        uses: android-actions/setup-android@v4
+with:
+  packages: 'platform-tools'
+  
           path: app/build/outputs/apk/debug/app-debug.apk
