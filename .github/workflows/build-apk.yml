@@ -17,7 +17,7 @@ jobs:
 
       - name: Extract app source
         run: |
-          unzip -o app.zip -d .
+          unzip -o App.Zip.zip -d .
           test -d app
 
       - name: Setup Java
